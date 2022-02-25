@@ -151,7 +151,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?
 				{vLow:0.723085, vHi:0.896842,vColor:"rgb(255,128,0)"},
 				{vLow:0.896843, vHi:1.000000,vColor:"rgb(237, 28, 36)"}
 			];
-    let a=d3.json("FacadeRisk_Unproj.json", data => {
+    let a=d3.json("https://raw.githubusercontent.com/NYCDOB/FacadeRisk/main/FacadeRisk_Unproj.json", data => {
 			let probColor = function (a) {
 				for (x of vProbability) {
 					if (a <= x.vHi ) {return x.vColor;}
