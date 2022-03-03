@@ -334,8 +334,11 @@
             dataArray.push(
               "BIN,Address,Borough,Risk_Probability,Community_District"
             );
-            let _dl = data.features.length;
-            for (let _q = 0, _str = ""; _q < _dl; _q++) {
+            for (
+              let _q = 0, _str = "", _dl = data.features.length;
+              _q < _dl;
+              _q++
+            ) {
               _str = `${data.features[_q].properties.BIN_1},${
                 data.features[_q].properties.Address
               },${data.features[_q].properties.Borough},${
